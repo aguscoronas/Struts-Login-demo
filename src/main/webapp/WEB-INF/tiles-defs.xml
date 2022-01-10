@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+"http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+
+<tiles-definitions>
+<definition name="baseLayout" path="/BaseLayout.jsp">
+    <put name="title"  value="Base Layout Title" />
+    <put name="header" value="/header.jsp" />
+    <put name="menu"   value="/menu.jsp" />
+    <put name="body"   value="/body.jsp" />    
+    <put name="footer" value="/footer.jsp" />
+</definition>
+
+<definition name="tiles.login" extends="baseLayout">
+    <put name="title" value="Login" />
+    <put name="body" value="/LoginView.jsp" />
+</definition>
+
+<definition name="tiles.mainMenu" extends="baseLayout">
+    <put name="title" value="Main Menu" />
+    <put name="body" value="/MainMenu.jsp" />
+</definition>
+
+</tiles-definitions>

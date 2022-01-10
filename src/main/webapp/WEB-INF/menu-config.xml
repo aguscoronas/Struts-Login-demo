@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<MenuConfig>
+	<Displayers>
+		<Displayer name="TabbedMenu"
+			type="net.sf.navigator.displayer.TabbedMenuDisplayer" />
+		<Displayer name="Simple"
+			type="net.sf.navigator.displayer.SimpleMenuDisplayer" />
+	</Displayers>
+
+	<Menus>
+		<Menu name="mainMenu" title="mainmenu.name">			
+			<Item name="logOut" title="mainmenu.logout" action="/login" />
+		</Menu>
+		<Menu name="localeMenu" title="localemenu.setlocale">
+			<Item name="english" title="English"
+				location="Locale.do?method=english" />
+			<Item name="spanish" title="Castellano"
+				location="Locale.do?method=spanish" />
+		</Menu>
+	</Menus>
+</MenuConfig>
